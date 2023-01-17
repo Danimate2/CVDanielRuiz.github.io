@@ -1,0 +1,138 @@
+html{
+    box-sizing:border-box;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    overflow-x:hidden
+}
+
+
+*,*:before,*:after{
+    box-sizing:inherit
+}
+
+.contenedor:after, .contenedor:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div {
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    border: 8px solid rgb(249, 225, 225);
+    background: rgb(228, 232, 244);
+  }
+  
+  .content-box {
+    box-sizing: content-box;
+    /* Ancho  total: 160px + (2 * 20px) + (2 * 8px) = 216px
+       Altura total: 80px + (2 * 20px) + (2 * 8px) = 136px
+       Ancho de la caja de contenido: 160px
+       Altura de la caja de contenido: 80px */
+  }
+  
+  .border-box {
+    box-sizing: border-box;
+    /* Ancho total: 160px
+       Altura total: 80px
+       Ancho de la caja de contenido: 160px - (2 * 20px) - (2 * 8px) = 104px
+       Altura de la caja de contenido: 80px - (2 * 20px) - (2 * 8px) = 24px */
+  }
+
+.redondeado{border-radius:4px}
+
+/* Danielfoto.jpg */
+.contenedor-foto{
+    position:relative;
+    align-content: center;
+}
+
+.foto{
+    width:100%;
+    opacity: 0.5;
+}
+
+body{
+    background-color: lightgrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#container {
+/*width: 70%; */
+width: auto;
+margin: 0px auto;
+border: 1px solid royalblue;
+}
+
+header{
+    background-color: lightsteelblue;
+    height: 100px;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    line-height: 100px;
+    color :rgb(12, 97, 172);
+    border-bottom: 3px dashed burlywood;
+
+}
+
+nav{
+    background: lightskyblue;
+    height: 50px;
+    border-bottom: 1px solid lightcyan;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+clear: both;
+}
+
+#content{
+    float:left;
+    width: calc(80% - 80px);
+    min-height: auto;
+    background-color: rgb(104, 147, 190);
+    padding: auto;
+}
+
+.article{
+    color: blanchedalmond;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom:10px ;
+    border-bottom: 1px solid#eee;
+}
+
+.article h1{
+    font-size:25px;
+}
+
+.article:first-child{
+    padding-top: 10px;
+    border-bottom: 1px solid#eee;
+
+}
+
+aside{
+    float: left;
+    width: calc (20%-20px);
+    background-color: lightgray;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+footer{
+    background-color: rgb(116, 116, 128);
+    color: aliceblue;
+    text-align: center;
+    height: 1px;
+    line-height: 1px;
+}
