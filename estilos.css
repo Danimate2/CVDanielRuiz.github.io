@@ -26,25 +26,19 @@ div {
   
   .content-box {
     box-sizing: content-box;
-    /* Ancho  total: 160px + (2 * 20px) + (2 * 8px) = 216px
-       Altura total: 80px + (2 * 20px) + (2 * 8px) = 136px
-       Ancho de la caja de contenido: 160px
-       Altura de la caja de contenido: 80px */
+   
   }
   
   .border-box {
     box-sizing: border-box;
-    /* Ancho total: 160px
-       Altura total: 80px
-       Ancho de la caja de contenido: 160px - (2 * 20px) - (2 * 8px) = 104px
-       Altura de la caja de contenido: 80px - (2 * 20px) - (2 * 8px) = 24px */
+  
   }
 
 .redondeado{border-radius:4px}
 
 /* Danielfoto.jpg */
 .contenedor-foto{
-    position:relative;
+    position:rel center;
     align-content: center;
 }
 
@@ -54,10 +48,17 @@ div {
 }
 
 body{
+    margin: 0;
     background-color: lightgrey;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    display: grid;
+    
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 
 }
+
 #container {
 /*width: 70%; */
 width: auto;
@@ -67,6 +68,7 @@ border: 1px solid royalblue;
 
 header{
     background-color: lightsteelblue;
+    padding: 30px;
     height: 100px;
     width: 100%;
     margin-top: auto;
@@ -74,20 +76,21 @@ header{
     line-height: 100px;
     color :rgb(12, 97, 172);
     border-bottom: 3px dashed burlywood;
+    font-size: medium;
 
 }
 
 nav{
     background: lightskyblue;
-    height: 50px;
+    height: auto;
     border-bottom: 1px solid lightcyan;
 }
 
 nav ul li {
     float: left;
     list-style: none;
-    margin: 10px;
-    line-height: 30px;
+    margin: auto;
+    line-height: auto;
 }
 
 .clearfix{
@@ -129,10 +132,13 @@ aside{
     padding-right: 10px;
     padding-top: 40px;
 }
+
 footer{
+
     background-color: rgb(116, 116, 128);
-    color: aliceblue;
+    padding: 1em 0;
     text-align: center;
-    height: 1px;
-    line-height: 1px;
+    
+    
+   
 }
